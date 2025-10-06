@@ -18,7 +18,7 @@
   },
   "include": [
     "*.ts"
-  ],
+, "actionFunction.test.ts", "helperFunction.test.ts"  ],
   "files": [
     "dayplanner.ts",
     "gemini-llm.ts",

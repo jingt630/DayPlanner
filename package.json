@@ -4,20 +4,30 @@
   "description": "A demo application showing how to use Google's Gemini API to create student schedules",
   "main": "dist/dayplanner-tests.js",
   "scripts": {
+    "prebuild": "npm install image-size",
     "build": "tsc",
     "start": "npm run build && node dist/textExtraction-test.js",
     "dev": "ts-node --transpile-only textExtraction-test.ts",
-    "test": "npm run build && node dist/textExtraction-test.js"
+    "test": "npm run build && node dist/actionFunction.test.js"
   },
-  "keywords": ["gemini", "ai", "schedule", "student", "demo", "typescript"],
+  "keywords": [
+    "gemini",
+    "ai",
+    "schedule",
+    "student",
+    "demo",
+    "typescript"
+  ],
   "author": "Student Demo",
   "license": "MIT",
   "dependencies": {
-    "@google/generative-ai": "^0.21.0"
+    "@google/generative-ai": "^0.21.0",
+    "image-size": "^2.0.2"
   },
   "devDependencies": {
+    "@types/mocha": "^10.0.10",
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "^10.9.0"
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
   }
 }

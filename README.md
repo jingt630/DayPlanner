@@ -44,10 +44,13 @@ deleteExtraction(index: Number)
 
 ## User Interaction
 For the image "Inputting image to AI", the one of the two context the AI get from the user is a single image file. The AI is always programmed with the request to identity all text blocks in the image and their position in the image. The user can input the image file by clicking on the upload button.
+![First User Page]("UI_1.png")
 
 The "Pop-up after uploading img" will show to ask for the language, from the selection, the user would like the AI to translate to, the second context the user can input to the AI.
+![Second User Page]("UI_2.png")
 
 After giving the inputs from the user to the AI, the AI will spit its output by automatically creating textbox component in the application and filling it out. The AI doesn't return in a way like chatbox. The user can revise the original text and its location in the textbox component created by AI.
+![Third User Page]("UI_3.png")
 
 *Sketch includes translation due to the synchronizations as described in assignment 2.
 ### User Journey:
